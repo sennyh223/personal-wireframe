@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* Nav Bar CSS */
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#logo {
+    height: 50px;
+    margin-right: 10px; 
+}
+
+.navbar-left h1 {
+    color: white;
+    font-size:22px;
+    font-weight: 500;
+    font-family: 'Rubik';
+    margin: 0; 
+    text-transform: uppercase;
+}
+
+
+.navbar-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-right a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik';
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-right a:hover {
+    background-color: #575757;
+    color: #f1f1f1;
+}
+
+
+/* Hero CSS */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 70vh;
+    width: 100%;
+    background-color: #000000;
+}
+
+.hero-text {
+    position:relative;
+    margin-left:20% ;
+    font-family:'Rubik';
+    flex: 6;
+    color:#ffffff;
+    padding-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.hero-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Rubik';
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    margin-right:20%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* About CSS */
+
+.about {
+    font-family: 'Rubik';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 6;
+    padding-right: 20px;
+}
+
+.about h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.about-image {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Skills CSS */
+.skills {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.skills p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.skill-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.skill-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Portfolio CSS */
+.portfolio {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; /* Space between items */
+}
+
+.portfolio-container > div {
+    flex-basis: calc(33.33% - 20px); /* Three items per row with gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.portfolio-container img {
+    width: 100%;
+    max-width: 300px; /* Limit the image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Experience CSS */
+.resume {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resume h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+    width: 100%;
+    max-width: 70%; 
+}
+
+.experience-container #experience1 {
+    flex: 1 1 calc(50% - 20px); /* Takes 50% of the container width minus the gap */
+    box-sizing: border-box;
+}
+
+.resume h3, .resume h4, .resume p {
+    margin: 0;
+    text-align: left; /* Adjusts text alignment within each experience box */
+}
+
+.resume h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.resume h4 {
+    margin-top:2px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.resume p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Contact Section CSS */
+.contact {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #000; /* Highlight the input on focus */
+    outline: none;
+}
+
+.submit-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
+
+/* Contact Image Styling */
+.contact-image {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-image img {
+    max-width:80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #000; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer .navbar {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.footer .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer .navbar a:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+

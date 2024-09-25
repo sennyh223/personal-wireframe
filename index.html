@@ -3,98 +3,159 @@
     <head>
         <meta charset="UTF-8">
         <title>Senny Huang</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wdth,wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
-        <img id="logo" src="images/logo.png" alt="Senny Huang Logo">
-        <h1>Senny Huang</h1>
         <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-          </div>
+            <div class="navbar-left">
+                <img id="logo" src="images/logo.svg" alt="Senny Huang Logo">
+
+            </div>
+            <div class="navbar-right">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
         
-        <div class="hero">
-            <h1>Hi, I’m Senny, <br> 
-                a Graphic Designer <br>
-                venturing into <br>
-                Web Development
-            </h1>
-            <img id="hero-img" src="images/hero.png" alt="Hero Image">
-            <button>Let's chat!</button>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hi, I’m Senny, <br> 
+                    a Graphic Designer <br>
+                    venturing into <br>
+                    Web Development
+                </h1>
+                <button>Let's chat!</button>
+            </div>
+            <div class="hero-image">
+                <img id="hero-img" src="images/rectangle.png" alt="Hero Image">
+            </div>
+        </div>
+        
+
+        <div id="about" class="about">
+            <div class="about-image">
+                <img id="about-img" src="images/rectangle.png" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>About</h2>
+                <p id="about-section">Hello! I’m Senny, a passionate Graphic Designer transitioning into Web Development. 
+                    With over five years of experience in esports and a degree in Web Programming & 
+                    Design from Purdue University, I’ve honed my skills and broadened my horizons. 
+                    I’m eager to collaborate on innovative projects and bring creative ideas to life. 
+                    Outside of creative work I love building computers and exploring the nature around me. 
+                    Let’s connect and make something amazing together!
+                </p>
+            </div>
         </div>
 
-        <div class="about">
-            <h2>About</h2>
-            <p id="about-section">Hello! I’m Senny, a passionate Graphic Designer transitioning into Web Development. 
-                With over five years of experience in esports and a degree in Web Programming & 
-                Design from Purdue University, I’ve honed my skills and broadened my horizons. 
-                I’m eager to collaborate on innovative projects and bring creative ideas to life. 
-                Outside of creative work I love building computers and exploring the nature around me. 
-                Let’s connect and make something amazing together!</p>
-            <img id="about-img" src="images/about.png" alt="About Image">
-        </div>
-
-        <div class="skills">
+        <div id="skills" class="skills">
             <h2>What I can do?</h2>
             <div class="skill-container">
                 <div class="brand-design">
                     <!-- Section discussing branding design -->
+                     <img id="skill1" src="images/rectangle2.png">
+                     <p>Branding Design</p>
                 </div>
                 <div class="social-media">
                     <!-- Section for social media graphics -->
+                    <img id="skill2" src="images/rectangle2.png">
+                    <p>Social Media Graphics</p>
                 </div>
                 <div class="web-dev">
                     <!-- Section for all the different web dev I can do -->
+                    <img id="skill3" src="images/rectangle2.png">
+                    <p>Web Development</p>
                 </div>
-                
-                <div class="software">
-                    <!-- Section for all the different software I use / familiar with -->
                 </div>
             </div>
 
         </div>
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-container">
                 <div class="graphic-design" id="project-1">
-                    <img id="project1_img" src="project.png">
+                    <img id="project1_img" src="images/project.png">
                 </div>
                 <div class="graphic-design" id="project-2">
-                    <img id="project2_img" src="project.png">
+                    <img id="project2_img" src="images/project.png">
                 </div>
                 <div class="graphic-design" id="project-3">
-                    <img id="project3_img" src="project.png">
+                    <img id="project3_img" src="images/project.png">
                 </div>
                 <div class="web-design" id="project-4">
-                    <img id="project4_img" src="project.png">
+                    <img id="project4_img" src="images/project.png">
                 </div>
                 <div id="web-design">
-                    <img id="project5_img" src="project.png">
+                    <img id="project5_img" src="images/project.png">
                 </div>
                 <div id="social-media">
-                    <img id="project6_img" src="project.png">
-                </div>
-                <div id="social-media">
-                    <img id="project7_img" src="project.png">
+                    <img id="project6_img" src="images/project.png">
                 </div>
             </div>
 
         </div>
 
-        <div class="resume">
+        <div id="resume" class="resume">
             <h2>Professional Experience</h2>
+            <div class="experience-container">
+                <div id="experience1">
+                    <h3>Graphic Design Intern <br> at Affinitiv Advertising</h3>
+                    <h4>May - August 2023</h4>
+                    <p>This is a placeholder text for my work experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div id="experience1">
+                    <h3>Experience <br> Line 2</h3>
+                    <h4>Time Period</h4>
+                    <p>This is a placeholder text for my work experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="experience1">
+                    <h3>Experience <br> Line 2</h3>
+                    <h4>Time Period</h4>
+                    <p>This is a placeholder text for my work experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div id="experience1">
+                    <h3>Experience <br> Line 2</h3>
+                    <h4>Time Period</h4>
+                    <p>This is a placeholder text for my work experience. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
         </div>
 
-        <div class="contact">
-            <h2>Let's Connect!</h2>
-            <button id="email">Email</button>
-            <button id="social1">LinkedIn</button>
-            <button id="social2">Behance</button>
-            <button id="social3">GitHub</button>
+        <div id="contact" class="contact">
+            <h2>Let's Get in Touch!</h2>
+            <div class="contact-container">
+                <!-- Left side: Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Send</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Right side: Image -->
+                <div class="contact-image">
+                    <img src="images/rectangle.png" alt="Contact Image">
+                </div>
+            </div>
         </div>
 
         <div class="footer">
